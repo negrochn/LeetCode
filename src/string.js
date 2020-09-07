@@ -7,17 +7,16 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function (s) {
-  var maxSpan = 1;
-  for (var i in s.split('')) {
-    i = Number(i);
-    while (true) {
-      if (new Set(s.slice(i, i + maxSpan)).size < maxSpan) {
-        break;
-      }
-      maxSpan++;
+  var map = new Map();
+  var max = 0;
+  for(var i = 0, j = 0; j < s.length; j++) {
+    if (map.has(s[j])) {
+      i = Math.max(i, map.get(s[j]) + 1);
     }
+    max = Math.max(max, j - i + 1);
+    map.set(s[j], j);
   }
-  return maxSpan - 1;
+  return max;
 };
 
 module.exports = {
