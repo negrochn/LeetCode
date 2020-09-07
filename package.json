@@ -1,0 +1,27 @@
+{
+  "name": "LeetCode",
+  "version": "1.0.0",
+  "description": "泥垢樂写 LeetCode 解题代码的地方。",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negrochn/LeetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/negrochn/LeetCode/issues"
+  },
+  "homepage": "https://github.com/negrochn/LeetCode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  },
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
