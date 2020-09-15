@@ -4,7 +4,7 @@
   "description": "泥垢樂写 LeetCode 解题代码的地方。",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest ./test"
   },
   "repository": {
     "type": "git",
