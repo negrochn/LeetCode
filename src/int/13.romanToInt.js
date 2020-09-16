@@ -12,15 +12,14 @@ var romanToInt = function (s) {
     if (m < n) {
       result += n - m
       i = j + 1
-      j = i + 1
     } else {
       while (s[i] === s[j]) {
         j++
       }
       result += m * (j - i)
       i = j
-      j = i + 1
     }
+    j = i + 1
   }
   return result
 }
